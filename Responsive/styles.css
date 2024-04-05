@@ -1,0 +1,126 @@
+/* RESPONSIVENESS EXAMPLE */
+
+
+
+
+/* COLOUR VARIABLES 
+============================================== */
+:root {
+  --dark: #27474E;
+  --light: #FFE8E1
+}
+
+
+
+/* BASE STYLES
+============================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"Futura", sans-serif; 
+  font-size: 16px;
+  line-height: 1.2;
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  background: var(--light);
+  color: var(--dark);
+  display: grid;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+
+
+/* HEADER
+============================================== */
+header {
+  position: fixed;
+  padding: 10px;
+  margin-bottom: 5px;
+  top: 0
+}
+  h2 {
+    margin-bottom: 5px; 
+  }
+
+  p {
+    margin-top: 5px;
+  }
+
+
+/* NAVIGATION
+============================================== */
+nav {
+  position: fixed;
+  list-style: none;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 25px;
+  top: 0
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* FOOTER
+============================================== */
+ footer {
+    background:var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+     font-family:"Futura", sans-serif; 
+    font-size: 10px
+    
+ }
+
+
+
+/* MEDIA QUERIES
+============================================== */
+@media only screen and (max-width: 600px) {
+  header {
+      padding: 20px 0;
+  }
+  nav ul {
+      display: block;
+  }
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+  .box {
+    width: 45%;
+  }
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 480px) {
+  .box {
+    width: 100%;
+  }
+}
